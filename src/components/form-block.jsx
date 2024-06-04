@@ -58,7 +58,7 @@ export default function FormBlock({ deviceType, isMobile }) {
 					/>
 					<div className='form flex'>
 						<div className='contacts-links flex flex-col'>
-							{/* <Link
+							<Link
 								href={'mailto:info@cmbr.media'}
 								style={{
 									textDecoration: 'underline',
@@ -67,7 +67,7 @@ export default function FormBlock({ deviceType, isMobile }) {
 								}}
 								className='big-font'>
 								info@cmbr.media
-							</Link> */}
+							</Link>
 							<Link
 								href='tel:89996661686'
 								style={{
