@@ -58,7 +58,7 @@ export default function FormBlock({ deviceType, isMobile }) {
 					/>
 					<div className='form flex'>
 						<div className='contacts-links flex flex-col'>
-							<Link
+							{/* <Link
 								href={'mailto:info@cmbr.media'}
 								style={{
 									textDecoration: 'underline',
@@ -67,7 +67,7 @@ export default function FormBlock({ deviceType, isMobile }) {
 								}}
 								className='big-font'>
 								info@cmbr.media
-							</Link>
+							</Link> */}
 							<Link
 								href='tel:89996661686'
 								style={{
@@ -125,17 +125,7 @@ export default function FormBlock({ deviceType, isMobile }) {
 										<p>Telegram</p>
 									</Link>
 								</div>
-								<div className='flex flex-row' style={{ gap: '45px' }}>
-									{/* <Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
-										<p>VK</p>
-									</Link>
-									<Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
-										<p>Twitter</p>
-									</Link>
-									<Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
-										<p>Youtube</p>
-									</Link> */}
-								</div>
+								<div className='flex flex-row' style={{ gap: '45px' }}></div>
 							</div>
 						</div>
 						<div className='info-container flex'>

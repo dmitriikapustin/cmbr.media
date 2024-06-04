@@ -7,7 +7,10 @@ import HeaderDesktop from '@/components/common/header-desktop'
 const onest = Onest({ subsets: ['latin'] })
 
 export const metadata = {
-	title: 'cmbr'
+	title: 'cmbr',
+	other: {
+		'yandex-verification': '79cdc0d298f35036'
+	}
 }
 
 export default function RootLayout({ children }) {
