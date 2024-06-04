@@ -36,16 +36,16 @@ export default function FormBlock ({deviceType, isMobile}) {
         <div className="content flex flex-col justify-evenly">
           <Image alt="" width={1000} height={1000} src={isMobile ? "/svg/form-text-mob.svg" : "/svg/form-text-pc.svg"} style={{width: '100%', height: 'auto'}}/>
           <div className="form flex">
-            <div className="flex flex-col">
+            <div className="flex flex-col" style={{gap: '20px'}}>
               <Link href={'mailto:info@cmbr.media'} 
                 style={{textDecoration: 'underline', textDecorationSkipInk: "none", height: 'fit-content'}} 
                 className="big-font">
                   info@cmbr.media
               </Link>
-              <Link href={'tel:89996667710'} 
+              <Link href={'tel:89996661686'} 
                 style={{textDecoration: 'underline', textDecorationSkipInk: "none", height: 'fit-content'}} 
                 className="big-font">
-                  89996667710
+                  +7 999 666-16-86
               </Link>
             </div>
             <form className="flex flex-col" onSubmit={formik.handleSubmit}>
@@ -60,8 +60,8 @@ export default function FormBlock ({deviceType, isMobile}) {
               <div className="links-col flex flex-col">
                 <div className="flex flex-row" style={{gap: '45px'}}>
                   <Link href={'https://www.instagram.com/cmbr.media'} style={{width: 'calc((100% - 90px)/3)'}}><p>Instagram</p></Link>
-                  {/* <Link href={'#'} style={{width: 'calc((100% - 90px)/3)'}}><p>Facebook</p></Link>
-                  <Link href={'#'} style={{width: 'calc((100% - 90px)/3)'}}><p>Pinterest</p></Link> */}
+                  <Link href={'https://wa.me/79996661686'} style={{width: 'calc((100% - 90px)/3)'}}><p>What'sApp</p></Link>
+                  <Link href={'https://t.me/+79996661686'} style={{width: 'calc((100% - 90px)/3)'}}><p>Telegram</p></Link>
                 </div>
                 {/* <div className="flex flex-row" style={{gap: '45px'}}>
                   <Link href={'#'} style={{width: 'calc((100% - 90px)/3)'}}><p>VK</p></Link>
