@@ -1,0 +1,73 @@
+.form-block
+  input
+    color: white
+    border-bottom: 2px solid white
+    padding: 10px
+    min-width: 100px
+    width: 100%
+    &::placeholder
+      color: #ECC881
+      opacity: .69
+  .links-container
+    > p
+      font-weight: 700
+  .info-container
+    a
+      opacity: .5
+  form
+    gap: 15px
+  &.pc
+    .content
+      height: 100%
+      h2
+        text-align: center
+      .form 
+        gap: 60px
+        flex-direction: row
+        > a
+          width: fit-content
+          flex-shrink: 0
+          padding-top: 20px
+        form
+          flex: 1 1 0
+          button
+            margin-top: 15px
+            width: fit-content
+      .bottom-container
+        flex-direction: row
+        justify-content: space-between
+        .links-container
+          gap: 30px
+        .links-col
+          gap: 30px
+        .info-container
+          gap: 60px
+          flex-direction: row
+          align-items: flex-end
+          a
+            &:hover
+              opacity: 1
+  &.mob
+    overflow: hidden
+    .content
+      gap: 15px
+      height: 100%
+      .bottom-container
+        flex-direction: column
+        gap: 30px
+        .links-col, .links-container
+          gap: 15px
+        .links-container
+          > p
+            text-align: center
+        .info-container
+          align-items: center
+          justify-content: center
+          gap: 10px
+          flex-direction: column
+      .form
+        flex-direction: column
+        gap: 30px
+        form
+          button
+            margin-top: 15px

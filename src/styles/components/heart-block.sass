@@ -1,0 +1,113 @@
+.heart-block
+  position: relative
+  .dark-bg
+    background-color: black
+  .section-bg
+    transition: var(--animationTransition)
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    z-index: -1
+    object-fit: cover
+  .icons-container
+    background-color: transparent
+    .icon-wrapper
+      height: auto
+      position: absolute
+      > img
+        width: 100%
+        height: auto
+        object-fit: cover
+  .text-wrapper
+    width: 100%
+    > img
+      transition: var(--animationTransition)
+      width: 100%
+      height: 100%
+      object-fit: contain
+      &:last-child
+        position: absolute
+        object-fit: cover
+        left: 0
+        top: 0
+  .heart-wrapper
+    > img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      transition: var(--animationTransition)
+      &:last-child 
+        position: absolute
+  .column-wrapper
+    gap: 15px
+  &.pc
+    .icon-wrapper
+      width: 150px
+    .container
+      padding-top: 80px
+      .top-container
+        flex-direction: row
+        justify-content: space-between
+        > div
+          gap: 60px
+        > p
+          width: 30%
+      .text-wrapper
+        position: absolute
+        left: 0
+        bottom: 80px
+      .heart-wrapper
+        position: absolute
+        width: 28vw
+        height: 24vw
+        left: calc(50% - 28vw/2)
+        top: calc(50% - 24vw/2)
+        > img
+          &:last-child
+            left: 0
+            top: 0
+        @media(max-width: 1024px)
+          width: 287px
+          height: 246px
+          left: calc(50% - 287px/2)
+          top: calc(50% - 246px/2)
+        @media(min-width: 1991px)
+          width: 557px
+          height: 478px
+          left: calc(50% - 557px/2)
+          top: calc(50% - 478px/2)
+  &.mob
+    .icon-wrapper
+      width: 100px
+    .container
+      padding-top: 20px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      gap: 30px
+      .top-container
+        flex-direction: column
+        gap: 15px
+        .column-wrapper
+          > p
+            opacity: .69
+      .text-wrapper
+        position: relative
+        height: auto
+        > img
+          height: auto
+          &:last-child
+            height: 100%  
+      .heart-wrapper
+        width: 100%
+        height: auto
+        position: relative
+        max-width: 500px
+        > img
+          height: auto
+          &:last-child
+            height: 100%
+      

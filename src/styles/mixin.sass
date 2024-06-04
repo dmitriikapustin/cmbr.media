@@ -1,0 +1,40 @@
+@function dynamicFont($f-min, $f-max, $v-min, $v-max)
+  $k: ($f-max - $f-min)/($v-max - $v-min)
+  $b: $f-min - $k * $v-min
+
+  $b: $b * 1px
+  @return calc(#{$k} * 100vw + #{$b})
+
+
+@mixin responsiveFontSize($f-min, $f-max, $v-min, $v-max)
+  font-size: dynamicFont($f-min, $f-max, $v-min, $v-max)
+
+  @if $v-max > 1024
+    @media (max-width: 1024px)
+      $b: 1px
+      font-size: calc(#{$f-min} * #{$b})
+  @else
+    @media (max-width: #{$v-min}px)
+      $b: 1px
+      font-size: calc(#{$f-min} * #{$b})
+
+  @media(min-width: #{$v-max}px)
+    $b: 1px
+    font-size: calc(#{$f-max} * #{$b})
+
+
+@mixin responsiveLineHeight($f-min, $f-max, $v-min, $v-max)
+  line-height: dynamicFont($f-min, $f-max, $v-min, $v-max)
+
+  @if $v-max > 1024
+    @media (max-width: 1024px)
+      $b: 1px
+      line-height: calc(#{$f-min} * #{$b})
+  @else
+    @media (max-width: #{$v-min}px)
+      $b: 1px
+      line-height: calc(#{$f-min} * #{$b})
+
+  @media(min-width: #{$v-max}px)
+    $b: 1px
+    line-height: calc(#{$f-max} * #{$b})
