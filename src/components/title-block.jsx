@@ -21,11 +21,7 @@ export default function TitleBlock({ deviceType }) {
 							style={{ height: 'auto' }}
 						/>
 					</Link>
-					<h1 className='big-font'>
-						We are
-						<br />
-						CMBR
-					</h1>
+					<h1 className='title-font'>We are CMBR</h1>
 				</div>
 			</div>
 		</section>
