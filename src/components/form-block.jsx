@@ -59,9 +59,9 @@ export default function FormBlock ({deviceType, isMobile}) {
               <p>Социальные сети</p>
               <div className="links-col flex flex-col">
                 <div className="flex flex-row" style={{gap: '45px'}}>
-                  <Link href={'https://www.instagram.com/cmbr.media'} style={{width: 'calc((100% - 90px)/3)'}}><p>Instagram</p></Link>
-                  <Link href={'https://wa.me/79996661686'} style={{width: 'calc((100% - 90px)/3)'}}><p>What'sApp</p></Link>
-                  <Link href={'https://t.me/+79996661686'} style={{width: 'calc((100% - 90px)/3)'}}><p>Telegram</p></Link>
+                  <Link href={"https://www.instagram.com/cmbr.media"} style={{width: 'calc((100% - 90px)/3)'}}><p>Instagram</p></Link>
+                  <Link href={"https://wa.me/79996661686"} style={{width: 'calc((100% - 90px)/3)'}}><p>What'sApp</p></Link>
+                  <Link href={"https://t.me/+79996661686"} style={{width: 'calc((100% - 90px)/3)'}}><p>Telegram</p></Link>
                 </div>
                 {/* <div className="flex flex-row" style={{gap: '45px'}}>
                   <Link href={'#'} style={{width: 'calc((100% - 90px)/3)'}}><p>VK</p></Link>
