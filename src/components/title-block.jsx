@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
-export default function TitleBlock({ deviceType, isMobile }) {
+export default function TitleBlock({ deviceType }) {
 	return (
 		<section className={`title-block relative block with-header ${deviceType}`}>
 			<Image
@@ -9,18 +10,22 @@ export default function TitleBlock({ deviceType, isMobile }) {
 				alt=''
 				style={{ zIndex: -1, objectFit: 'cover' }}
 			/>
-			<div className={`container ${deviceType} flex items-end more-w`}>
-				<div className='content flex flex-col' style={{ color: 'white' }}>
-					<p>We are CMBR media</p>
-					{!isMobile && (
+			<div className={`container ${deviceType} flex items-center more-w  justify-center`}>
+				<div className='content flex flex-col text-center' style={{ color: 'white' }}>
+					<Link href='#showreel' style={{ width: '100%', height: 'auto' }}>
 						<Image
 							width={1000}
 							height={1000}
 							alt=''
-							src='/svg/title-text-pc.svg'
-							style={{ width: '100%', height: 'auto' }}
+							src='/images/title-block-icon.webp'
+							style={{ height: 'auto' }}
 						/>
-					)}
+					</Link>
+					<h1 className='big-font'>
+						We are
+						<br />
+						CMBR
+					</h1>
 				</div>
 			</div>
 		</section>
