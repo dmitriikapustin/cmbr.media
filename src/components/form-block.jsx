@@ -59,14 +59,14 @@ export default function FormBlock({ deviceType, isMobile }) {
 					<div className='form flex'>
 						<div className='contacts-links flex flex-col'>
 							<Link
-								href={'mailto:pochta@gmail.com'}
+								href={'mailto:info@cmbr.media'}
 								style={{
 									textDecoration: 'underline',
 									textDecorationSkipInk: 'none',
 									height: 'fit-content'
 								}}
 								className='big-font'>
-								pochta@gmail.com
+								info@cmbr.media
 							</Link>
 							<Link
 								href='tel:89996661686'
@@ -109,20 +109,24 @@ export default function FormBlock({ deviceType, isMobile }) {
 							<div className='links-col flex flex-col'>
 								<div className='flex flex-row' style={{ gap: '45px' }}>
 									<Link
-										href='https://www.instagram.com/cmbr.media'
+										href='https://www.instagram.com/cmbr.media?igsh=NmhsejR6NTR0amNn'
 										target='_blank'
 										style={{ width: 'calc((100% - 90px)/3)' }}>
 										<p>Instagram</p>
 									</Link>
-									{/* <Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
-										<p>Facebook</p>
+									<Link
+										href='https://wa.me/89996661686'
+										style={{ width: 'calc((100% - 90px)/3)' }}>
+										<p>WhatsApp</p>
 									</Link>
-									<Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
-										<p>Pinterest</p>
-									</Link> */}
+									<Link
+										href='https://t.me/cmbrmedia'
+										style={{ width: 'calc((100% - 90px)/3)' }}>
+										<p>Telegram</p>
+									</Link>
 								</div>
 								<div className='flex flex-row' style={{ gap: '45px' }}>
-									<Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
+									{/* <Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
 										<p>VK</p>
 									</Link>
 									<Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
@@ -130,7 +134,7 @@ export default function FormBlock({ deviceType, isMobile }) {
 									</Link>
 									<Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
 										<p>Youtube</p>
-									</Link>
+									</Link> */}
 								</div>
 							</div>
 						</div>
