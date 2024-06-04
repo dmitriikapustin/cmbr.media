@@ -1,4 +1,4 @@
-'use server' 
+'use server'
 
 export default async function submitForm(values) {
 	try {
@@ -8,7 +8,7 @@ export default async function submitForm(values) {
 		let messageField = `*Новая заявка*\n\n`
 
 		messageField += `*Имя:* ${values.name}\n\n`
-    messageField += `*Email:* ${values.email}\n\n`
+		messageField += `*Email:* ${values.email}\n\n`
 
 		const req = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
 			method: 'POST',
@@ -25,7 +25,6 @@ export default async function submitForm(values) {
 		const res = await req.json()
 		return res.ok
 	} catch (error) {
-    console.log(error)
 		return false
 	}
 }
