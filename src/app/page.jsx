@@ -11,7 +11,6 @@ export default function Home () {
   const isMobile = getDeviceType()
   const deviceType = isMobile ? 'mob' : 'pc'
 
-  
   return (
     <>
     <TitleBlock deviceType={deviceType} isMobile={isMobile}/>

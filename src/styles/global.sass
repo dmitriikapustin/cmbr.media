@@ -6,6 +6,7 @@
 html, body
   -ms-overflow-style: none
   scrollbar-width: none
+  scroll-behavior: smooth
 
 a
   color: inherit
@@ -74,12 +75,12 @@ main
         max-width: calc(1920px - ($bodyPadding/2 * 1920px * 2))
       @media (max-width: 1024px)
         max-width: calc(1024px - ($bodyPadding/2 * 1024px * 2))
-    p
+    p, .p-font
       @include responsiveFontSize(16, 20, 1024, 1441)
     .big-font
       @include responsiveFontSize(48, 64, 1024, 1921)
       @include responsiveLineHeight(42, 60, 1024, 1921)
-    h3
+    h3, .h3-font
       @include responsiveFontSize(24, 32, 1024, 1921)
       @include responsiveLineHeight(20, 28, 1024, 1921)
     a, .req-btn

@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function ImageBlock ({deviceType, isMobile}) {
   return (
-    <section className={`image-block block ${deviceType} relative`}>
+    <section className={`image-block block ${deviceType} relative`} id="showreel">
       {!isMobile && <Image src={'/images/image-block-bg.webp'} fill sizes="80vw (max-width: 768px) 150vw" alt="" style={{objectFit: 'cover'}}/>}
       <div className={`container ${deviceType}`}>
         {isMobile &&

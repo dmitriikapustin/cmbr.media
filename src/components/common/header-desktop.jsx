@@ -9,13 +9,13 @@ export default function HeaderDesktop () {
       <div className="container pc">
         <div className="content flex flex-row justify-between items-center">
           <Image src={'/images/logo.webp'} alt='' width={200} height={200} style={{objectFit: 'cover', width: '100px', height: 'auto'}}/>
-          <div className="links-container flex flex-row items-center">
-            <Link href={'/'}><p>О нас</p></Link>
-            <Link href={'/'}><p>Шоурил</p></Link>
-            <Link href={'/'}><p>Форма обратной связи</p></Link>
-            <Link href={'/'}><p>Контакты</p></Link>
-          </div>
-          <RequestButton><p>Связаться</p></RequestButton>
+          <nav className="links-container flex flex-row items-center">
+            <Link href={'#about'} className='p-font'>О нас</Link>
+            <Link href={'#showreel'} className='p-font'>Шоурил</Link>
+            <Link href={'#form'} className='p-font'>Форма обратной связи</Link>
+            <Link href={'#contacts'} className='p-font'>Контакты</Link>
+          </nav>
+          <RequestButton><Link href='#form' className='p-font'>Связаться</Link></RequestButton>
         </div>
       </div>
     </header>

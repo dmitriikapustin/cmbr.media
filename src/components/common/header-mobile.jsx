@@ -1,6 +1,6 @@
 'use client'
 import { motion } from "framer-motion"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import BurgerMenu from "@/components/atoms/burger-menu"
@@ -10,13 +10,13 @@ export default function HeaderMobile () {
 
   const [isShow, setIsShow] = useState(false)
 
-  const openMenuAnim = {
+  const openMenuAnim = useMemo( () => ({
     minHeight: 'calc(100dvh - 90px)', 
     maxHeight: 'calc(100dvh - 90px + 20px)', 
     height: 'auto', overflow: 'scroll'
-  } 
+  }), [])
 
-  const closeMenuAnim = {height: 0, overflow: 'hidden'}
+  const closeMenuAnim = useMemo(() => ({height: 0, overflow: 'hidden'}), [])
 
   useEffect(() => {
     isShow ? document.documentElement.style.overflowY = 'hidden' 
@@ -36,10 +36,10 @@ export default function HeaderMobile () {
             initial={{minHeight: 0, height: 0, overflow: 'hidden'}}
             animate={isShow ? openMenuAnim : closeMenuAnim}>
               <div className="menu-content flex flex-col items-center text-center" style={{gap: '40px', paddingTop: '40px', color: 'white'}}>
-                <Link href={'/'} className="display-font">О НАС</Link>
-                <Link href={'/'} className="display-font">ШОУРИЛ</Link>
-                <Link href={'/'} className="display-font" style={{lineHeight: '32.4px'}}>ФОРМА<br/>ОБРАТНОЙ<br/>СВЯЗИ</Link>
-                <Link href={'/'} className="display-font">КОНТАКТЫ</Link>
+                <Link href={'#about'} className="display-font">О НАС</Link>
+                <Link href={'#showreel'} className="display-font">ШОУРИЛ</Link>
+                <Link href={'#form'} className="display-font" style={{lineHeight: '32.4px'}}>ФОРМА<br/>ОБРАТНОЙ<br/>СВЯЗИ</Link>
+                <Link href={'#contacts'} className="display-font">КОНТАКТЫ</Link>
               </div>
               <RequestButton deviceType="mob"><p>Связаться</p></RequestButton>
           </motion.div>
