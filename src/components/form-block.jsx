@@ -57,16 +57,28 @@ export default function FormBlock({ deviceType, isMobile }) {
 						style={{ width: '100%', height: 'auto' }}
 					/>
 					<div className='form flex'>
-						<Link
-							href={'mailto:pochta@gmail.com'}
-							style={{
-								textDecoration: 'underline',
-								textDecorationSkipInk: 'none',
-								height: 'fit-content'
-							}}
-							className='big-font'>
-							pochta@gmail.com
-						</Link>
+						<div className='contacts-links flex flex-col'>
+							<Link
+								href={'mailto:pochta@gmail.com'}
+								style={{
+									textDecoration: 'underline',
+									textDecorationSkipInk: 'none',
+									height: 'fit-content'
+								}}
+								className='big-font'>
+								pochta@gmail.com
+							</Link>
+							<Link
+								href='tel:89996661686'
+								style={{
+									textDecoration: 'underline',
+									textDecorationSkipInk: 'none',
+									height: 'fit-content'
+								}}
+								className='big-font'>
+								+7 999 666-16-86
+							</Link>
+						</div>
 						<form className='flex flex-col' onSubmit={formik.handleSubmit}>
 							<input
 								name='name'
@@ -96,15 +108,18 @@ export default function FormBlock({ deviceType, isMobile }) {
 							<p>Социальные сети</p>
 							<div className='links-col flex flex-col'>
 								<div className='flex flex-row' style={{ gap: '45px' }}>
-									<Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
+									<Link
+										href='https://www.instagram.com/cmbr.media'
+										target='_blank'
+										style={{ width: 'calc((100% - 90px)/3)' }}>
 										<p>Instagram</p>
 									</Link>
-									<Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
+									{/* <Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
 										<p>Facebook</p>
 									</Link>
 									<Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
 										<p>Pinterest</p>
-									</Link>
+									</Link> */}
 								</div>
 								<div className='flex flex-row' style={{ gap: '45px' }}>
 									<Link href={'#'} style={{ width: 'calc((100% - 90px)/3)' }}>
@@ -120,9 +135,9 @@ export default function FormBlock({ deviceType, isMobile }) {
 							</div>
 						</div>
 						<div className='info-container flex'>
-							<Link href={'#'}>
+							{/* <Link href={'#'}>
 								<p>Политика конфиденциальности</p>
-							</Link>
+							</Link> */}
 							<p>Camber Media, {new Date().getFullYear()}</p>
 						</div>
 					</div>
