@@ -75,17 +75,15 @@ export default function HeartBlock ({deviceType, isMobile}) {
       </div>
       <div className={`container relative ${deviceType}`}>
         <div className="top-container flex" style={{color: 'white'}}>
-          <p>Картельные сговоры не допускают ситуации, при которой акционеры крупнейших компаний.</p>
+          <p>Творческая команда специализирующаяся на создании и воплощении магии</p>
           <div className="flex flex-row justify-between">
             <div className="flex flex-col column-wrapper">
               <p>сценарии</p>
-              <p>post production</p>
-              <p>идеи</p>
+              <p>концепты</p>
             </div>
             <div className="flex flex-col column-wrapper">
-              <p>концепты</p>
-              <p>продюссирование</p>
-              <p>brainstorm</p>
+              <p>режиссирование</p>
+              <p>post production</p>
             </div>
           </div>
         </div>
