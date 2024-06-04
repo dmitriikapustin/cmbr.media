@@ -16,6 +16,7 @@ export default function ImageBlock({ deviceType, isMobile }) {
 				<video
 					muted
 					loop
+					controls
 					autoPlay
 					src='/video/showreel.mp4'
 					poster='/images/image-block-bg.webp'
